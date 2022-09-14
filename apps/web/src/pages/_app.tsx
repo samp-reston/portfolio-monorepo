@@ -1,9 +1,15 @@
-import "../styles/globals.css";
-// include styles from the ui package
-import "ui/styles.css";
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+import React from 'react'
 
-import type { AppProps } from "next/app";
+import Layout from '../components/Layout'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp ({ Component, pageProps }: AppProps): React.ReactNode {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
+
+export default MyApp
