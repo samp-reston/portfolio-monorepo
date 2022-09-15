@@ -1,25 +1,35 @@
-import Head from "next/head";
-import { Button } from "ui";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Hero from '../components/Hero'
+import RecentPosts from '../components/RecentPosts'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div id="body" className='flex flex-col items-start gap-28'>
       <Head>
-        <title>Docs - Turborepo Example</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Sam Preston | Web Developer</title>
+        <meta name="description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta name='viewport' content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="fullstack developer, freelance, samuel preston, sam preston, kings heath developer, web developer"/>
+        <meta name="author" content="Samuel Preston"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="googlebot" content="index, follow"/>
+        <meta name="geo.region" content="GB-BIR"/>
+        <meta property="og:title" content="Sam Preston | Glob" />
+        <meta property="og:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
+        <meta property="og:image" content="https://www.sampreston.co.uk/portrait.webp" />
+        <meta property="og:url" content="https://www.sampreston.co.uk/" />
+        <meta name="twitter:title" content="Sam Preston | Web Developer" />
+        <meta name="twitter:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
+        <meta name="twitter:url" content="https://www.sampreston.co.uk/" />
+        <meta name="twitter:card" content="Samuel Preston | Fullstack Web Developer" />
       </Head>
-
-      <main className="mx-auto w-auto px-4 pt-16 pb-8 sm:pt-24 lg:px-8">
-        <h1 className="mx-auto max-w-5xl text-center text-6xl font-extrabold leading-[1.1] tracking-tighter text-white sm:text-7xl lg:text-8xl xl:text-8xl">
-          Docs <br className="hidden lg:block" />
-          <span className="inline-block bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent ">
-            Turborepo Example
-          </span>{" "}
-        </h1>
-        <div className="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
-          <Button />
-        </div>
-      </main>
+      <Hero />
+      <RecentPosts />
     </div>
-  );
+  )
 }
+
+export default Home
