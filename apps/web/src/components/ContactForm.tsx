@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, FunctionComponent } from 'react'
 import { useFormspark } from '@formspark/use-formspark'
 import { useForm } from 'react-hook-form'
@@ -29,7 +27,6 @@ const ContactForm: FunctionComponent = () => {
   }
 
   return (
-    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     <form onSubmit={handleSubmit(onSubmit)} className='flex grow flex-col gap-4 text-p-mobile md:text-p'>
       <div className='flex flex-col'>
         <label htmlFor="name">Name</label>

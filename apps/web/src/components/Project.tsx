@@ -11,7 +11,6 @@ interface PropTypes {
 
 const Project: FunctionComponent<PropTypes> = ({ project }) => {
   const { description, image, testimonial, title, link } = project
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const collage = require(`../assets/projects/${image}`)
 
   return (
