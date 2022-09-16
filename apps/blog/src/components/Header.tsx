@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'
 
 const Header: FunctionComponent = () => {
   return (
-    <header className='min-w-full px-body transition-all duration-300 ease-linear '>
+    <header className='min-w-full px-body transition-all duration-300 ease-linear'>
       <nav className='flex w-full flex-row'>
         <ul className='flex h-24 w-full flex-row items-center justify-center sm:justify-start sm:gap-header'>
           <li className='flex hover:cursor-pointer'>
