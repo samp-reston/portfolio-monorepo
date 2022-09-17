@@ -10,7 +10,6 @@ interface PropTypes {
 
 const PostCard: FunctionComponent<PropTypes> = ({post}) => {
   const { title, date, description } = post
-  console.log(post)
   return (
     <div className='bg-base border-secondary border-2 rounded-lg p-4 flex-grow max-w-md flex flex-col gap-2'>
       <h3 className='text-h3-mobile text-black-90 md:text-h3'>{title}</h3>
