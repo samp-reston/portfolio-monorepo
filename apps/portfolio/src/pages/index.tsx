@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import MySkills from '../components/MySkills'
 import RecentWork from '../components/RecentWork'
 import projects from '../data/data.json'
+import portrait from '../../public/images/portrait.webp'
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +23,6 @@ const Home: NextPage = () => {
         <meta name="geo.region" content="GB-BIR"/>
         <meta property="og:title" content="Sam Preston | Web Developer" />
         <meta property="og:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
-        <meta property="og:image" content="https://www.sampreston.co.uk/portrait.webp" />
         <meta property="og:url" content="https://www.sampreston.co.uk/" />
         <meta name="twitter:title" content="Sam Preston | Web Developer" />
         <meta name="twitter:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
