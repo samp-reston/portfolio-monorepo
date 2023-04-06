@@ -2,7 +2,7 @@
   {
     "title": "Les Roches",
     "description": "This project required coordination with a designer for the refresh of the homepage, as well as the about page. This site was originally built using Wordpress so I had to quickly learn and adapt to develop PHP and build an easy to understand and use CMS interface for the client.",
-    "testinmonial": "",
+    "testimonial": "",
     "image": "lesroches-image.svg",
     "link": "https://www.lesroches.edu/"
   },
